@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../OneDrive/New folder"
+		},
+		{
+			"path": "../OneDrive/web dev"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web dev"
+	}
+}
