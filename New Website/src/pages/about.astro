@@ -1,5 +1,8 @@
 ---
 import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
 const pageTitle = "About Me";
 
 const identity = {
@@ -51,12 +54,10 @@ const skillColor = "crimson";
    {skills.map((skill) => <li class="skill">{skill}</li>)}
 </ul>
 
-		<!-- Navigation -->
-		<nav>
-			<a href="/">Home</a> |
-			<a href="/about">About</a> |
-			<a href="/blog">Blog</a>
-		</nav>
+		
+		
+		<Header />
+		
 
 		<h1>{pageTitle}</h1>
 
@@ -73,6 +74,9 @@ const skillColor = "crimson";
 
 {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>I have a different goal.</p>}
 	
-
+<Footer />
+  <script>
+    import "../scripts/menu.js";
+  </script>
     </body>
 </html>
